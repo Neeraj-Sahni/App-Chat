@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat + Video/Voice Call</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+  <header>
+    <h1>Chat App</h1>
+    <div class="user-setup">
+      <input id="username" placeholder="Your Name">
+      <button id="connectBtn">Connect</button>
+    </div>
+  </header>
+
+  <main id="chatMain">
+    <ul id="messages"></ul>
+  </main>
+
+  <footer>
+    <input id="msgInput" placeholder="Type a message..." disabled>
+    <button id="sendBtn" disabled>Send</button>
+    <input type="file" id="fileInput" accept="image/*,video/*" style="display:none;">
+    <button id="fileBtn" disabled>📎</button>
+  </footer>
+
+  <div class="call-buttons">
+    <button id="videoCallBtn">📹 Video Call</button>
+    <button id="voiceCallBtn">🎤 Voice Call</button>
+    <button id="endCallBtn" disabled>❌ End Call</button>
+  </div>
+
+  <div class="call-container">
+    <video id="localVideo" autoplay muted style="display:none;"></video>
+    <video id="remoteVideo" autoplay style="display:none;"></video>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

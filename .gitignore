@@ -1,0 +1,39 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+**/out/
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+bin/
+**/bin/
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Maven ###
+target/
+
+### Uploads or temporary files ###
+uploads/
+*.log
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### Allow only main source files and configs ###
+!/src/
+!/pom.xml
+!.gitignore
+!README.md
