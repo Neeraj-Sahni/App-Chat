@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: chat-app
+    runtime: java
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: PORT
+        value: 8080
