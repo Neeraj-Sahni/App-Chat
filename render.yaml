@@ -1,9 +1,7 @@
 services:
   - type: web
     name: chat-app
-    env: java
-    buildCommand: ./mvnw clean package -DskipTests
+    env: docker
+    plan: free
+    buildCommand: ./mvnw package -DskipTests
     startCommand: java -jar target/*.jar
-    envVars:
-      - key: PORT
-        value: 8080
